@@ -18,6 +18,10 @@ The default key is <kbd>F</kbd>. You can change it in the menu, and choose which
 
 ## Installation
 
+The easiest way is to install **[One Key Interact from CurseForge](https://www.curseforge.com/wow/addons/one-key-interact)** with the CurseForge app.
+
+To install it manually:
+
 1. Close the game, or log out to the character select screen.
 2. Copy the `QuickInteract` folder into your AddOns folder:
 
