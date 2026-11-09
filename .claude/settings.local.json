@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($env:Path = [Environment]::GetEnvironmentVariable\\('Path','Machine'\\) + ';' + [Environment]::GetEnvironmentVariable\\('Path','User'\\); \"node $\\(node --version\\), git $\\(git --version\\)\"; npx.cmd --yes skills add https://github.com/jburlison/wowaddonapiagents --skill wow-lua-api; \"exit: $LASTEXITCODE\")",
+      "PowerShell($env:Path = [Environment]::GetEnvironmentVariable\\('Path','Machine'\\) + ';' + [Environment]::GetEnvironmentVariable\\('Path','User'\\); npx.cmd --yes skills add https://github.com/jburlison/wowaddonapiagents --skill wow-addon-structure | Select-String -Pattern 'Installed|Selected|Risk|Safe|Low|High|Critical|error|symlink' ; \"structure exit: $LASTEXITCODE\"; npx.cmd --yes skills add https://github.com/jburlison/wowaddonapiagents --skill wow-api-widget | Select-String -Pattern 'Installed|Selected|Risk|Safe|Low|High|Critical|error|symlink'; \"widget exit: $LASTEXITCODE\")",
+      "PowerShell(foreach \\($s in 'wow-lua-api','wow-addon-structure','wow-api-widget'\\) { $a = \".agents\\\\skills\\\\$s\"; $c = \".claude\\\\skills\\\\$s\"; $l = Get-Item $c -Force -ErrorAction SilentlyContinue; $files = Get-ChildItem $c -Recurse -File -Force -ErrorAction SilentlyContinue; $scripts = $files | Where-Object { $_.Extension -match '^\\\\.\\(ps1|sh|py|js|ts|cmd|bat|exe\\)$' }; \"$s | agents SKILL.md: $\\(Test-Path \"$a\\\\SKILL.md\"\\) | claude SKILL.md: $\\(Test-Path \"$c\\\\SKILL.md\"\\) | link: $\\($l.LinkType\\) | files: $\\($files.Count\\) | scripts: $\\($scripts.Count\\)\"; \\(Get-Content \"$c\\\\SKILL.md\" -TotalCount 5\\) -join ' / ' }; \"--- top level:\"; Get-ChildItem -Force | Select-Object -ExpandProperty Name)"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "create-readme": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/create-readme/SKILL.md",
+      "computedHash": "d0ece1b2164ce1376e4ab6e98d6ac079df3a2a94f5f02224362b6a1ce2516ae9"
+    },
+    "wow-addon-structure": {
+      "source": "jburlison/wowaddonapiagents",
+      "sourceType": "github",
+      "skillPath": "skills/wow-addon-structure/SKILL.md",
+      "computedHash": "94c7b886b7e9e52f7a8a736c658e40ac1608f9073a259264db7e5e3639ae02f9"
+    },
+    "wow-api-widget": {
+      "source": "jburlison/wowaddonapiagents",
+      "sourceType": "github",
+      "skillPath": "skills/wow-api-widget/SKILL.md",
+      "computedHash": "5178d84f5333b748dcc19e6a376aefb3a33d1ddc15e2b5365a7200d7a5a3f4b1"
+    },
+    "wow-lua-api": {
+      "source": "jburlison/wowaddonapiagents",
+      "sourceType": "github",
+      "skillPath": "skills/wow-lua-api/SKILL.md",
+      "computedHash": "5c620fc1b3ea98dbbf6f291df0e2dfd1a4cd12e6f30e0a37d45e9655d25bde03"
+    }
+  }
+}

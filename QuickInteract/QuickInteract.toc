@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: One Key Interact
+## Notes: One key to loot nearby corpses one after another or talk to the closest NPC.
+## Version: 1.0.0
+## IconTexture: Interface\AddOns\QuickInteract\icon.tga
+## SavedVariables: QuickInteractDB
+
+QuickInteract.lua
