@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.png" alt="One Key Interact icon: the F key linked to an NPC, ore, chest, herb and corpse" width="160">
+  <img src="QuickInteract/icon.png" alt="One Key Interact icon: the F key linked to an NPC, ore, chest, herb and corpse" width="160">
 </p>
 
 # One Key Interact
